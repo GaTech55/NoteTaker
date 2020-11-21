@@ -18,7 +18,7 @@ module.exports = function (app) {
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-  app.get("/api/notes", function (req, res) {
+  app.get("/notes", function (req, res) {
     res.json(tableData);
   });
 
@@ -47,11 +47,11 @@ module.exports = function (app) {
   // I added this below code so you could clear out the table while working with the functionality.
   // Don"t worry about it!
 
-  app.delete("/api/notes/:id", function (req, res) {
-    // Empty out the arrays of data
-    // tableData.length = 0;
-    // waitListData.length = 0;
+  // app.delete("/api/notes/:id", function (req, res) {
+  //   // Empty out the arrays of data
+  //   // tableData.length = 0;
+  //   // waitListData.length = 0;
 
-    res.json({ ok: true });
-  });
+  //   res.json({ ok: true });
+  // });
 };
