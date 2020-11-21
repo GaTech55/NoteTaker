@@ -5,7 +5,7 @@
 const express = require("express");
 const apiRoutes = require("./routes/apiRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
-var logger = require("morgan");
+const logger = require("morgan");
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -13,10 +13,10 @@ var logger = require("morgan");
 // ==============================================================================
 
 // Tells node that we are creating an "express" server
-var app = express();
+const app = express();
 
 // Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 8089;
+const PORT = process.env.PORT || 8089;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));

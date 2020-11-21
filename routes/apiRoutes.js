@@ -4,7 +4,7 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-const tableData = require("../db.json");
+const tableData = require("../db/db.json");
 const router = require("express").Router();
 
 router.get("/notes", function (req, res) {
